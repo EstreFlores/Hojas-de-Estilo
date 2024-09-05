@@ -1,0 +1,247 @@
+ /* Selector general */
+ * {
+   background-color: #f48bc0;
+
+   box-sizing: border-box;
+   margin: 0%;
+   padding: 0%;
+
+   text-decoration: none;
+   list-style: none;
+
+ }
+
+
+ /* Selectores de elemento */
+ p {
+   font-size: 35;
+   text-align: center;
+   font-family: Open Sans;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+
+
+
+ /* Selectores de clase */
+ .boton {
+   background-color: green;
+   color: white;
+   padding: 12px;
+   border-radius: 100px;
+ }
+
+ .texto-sobresaliente {
+   font-weight: bold;
+ }
+
+ .comentario {
+   background-color: #092b5a;
+   text-align: center;
+   font-size: 25px;
+   color: white;
+   padding: 12px;
+   margin: 20px;
+   border-radius: 100px;
+ }
+
+ .mih1 {
+   text-align: center;
+   padding: 20px;
+   color: #23192d;
+   font-family: Alkatra;
+   font-weight: bold;
+
+ }
+
+ .parrafos {
+   display: flex;
+
+ }
+
+ .pa-uno {
+   background-color: #e6f99d;
+   margin-left: 25px;
+   text-align: center;
+ }
+
+ .pa-dos {
+   background-color: #fdc5c9;
+   margin-left: 25px;
+   text-align: center;
+ }
+
+ .pa-tres {
+   background-color: #92b35a;
+   margin-left: 25px;
+   text-align: center;
+ }
+
+
+ /* Selectores de ID */
+ #header {
+   background-color: rgb(207, 212, 206);
+   text-align: center;
+
+ }
+
+ #sidebar {
+   width: 250px;
+   display: inline-block;
+   margin-left: 340px;
+ }
+
+ #otro {
+   width: 250px;
+   display: inline-block;
+   margin-left: 340px;
+ }
+
+
+
+ /* Selectores de atributos */
+ input[type="text"] {
+   border: 2px solid black;
+ }
+
+ input[type="text"] {
+   background-color: #f0f0d8;
+ }
+
+ /* Selectores de pseudo-clase */
+ h2:hover {
+   text-decoration: underline;
+   background-color: #cc063e;
+   font-size: 30px;
+ }
+
+ input:focus {
+   outline: none;
+ }
+
+
+ /* Selectores de pseudo-elementos */
+ p::before {
+   content: "Antes de esto: ";
+ }
+
+ p::after {
+   content: "Después de esto: ";
+ }
+
+
+
+ /* Selectores de combinación */
+ header nav {
+   background-color: rgb(139, 139, 228);
+ }
+
+ section>h2 {
+   font-size: 24px;
+ }
+
+
+ /* Selectores de agrupación */
+ h3,
+ h4 {
+   color: darkgoldenrod;
+   text-align: center;
+
+ }
+
+ p.texto-sobresaliente,
+ .boton {
+   margin-bottom: 10px;
+ }
+
+
+
+
+
+ /*------------------- Mis estilos------------------- */
+
+ header {
+   max-width: 85%;
+   width: 1700px;
+   height: 90px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+ }
+
+ .logo {
+   font-family: Lobster;
+   font-size: 35px;
+
+ }
+
+ .logo:hover {
+   color: #eb6427;
+ }
+
+ /* Selectores de combinación */
+ nav ul {
+   width: 350px;
+   height: 90px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+
+ /* Selectores de combinación */
+ nav ul li a {
+   font-family: Alkatra;
+   font-size: 19px;
+   color: #0c0636;
+
+ }
+
+ /* Selectores de pseudo-clase */
+ nav ul li a:hover {
+   color: #ff0606;
+ }
+
+ @media only screen and(max-width:620px) {
+
+   header {
+
+     width: 100px;
+     height: 100px;
+
+     margin: 0 auto;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+
+
+   nav ul {
+     width: 350px;
+     height: 25px;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+   }
+ }
+
+
+
+
+
+ footer {
+   color: #fe4b74;
+   background-color: black;
+   text-align: center;
+   padding: 25px;
+   margin: 0px;
+ }
